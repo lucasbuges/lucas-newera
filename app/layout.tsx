@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const SITE = "https://lucasmoraes.ai";
+const SITE = "https://lucasmoraes.tech";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
