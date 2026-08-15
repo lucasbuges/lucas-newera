@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "./container";
+import { INSTAGRAM, INSTAGRAM_HANDLE, PHOTO_PROFILE } from "@/lib/config";
 
 const LINKS = [
   { href: "#ofertas", label: "Como trabalho" },
@@ -17,9 +18,13 @@ export function Nav() {
             href="/"
             className="flex items-center gap-2.5 text-sm font-medium tracking-tight"
           >
-            <span className="flex h-6 w-6 items-center justify-center rounded-[5px] bg-foreground text-[11px] font-semibold text-background">
-              L
-            </span>
+            <img
+              src={PHOTO_PROFILE}
+              alt=""
+              width={24}
+              height={24}
+              className="h-6 w-6 rounded-full object-cover"
+            />
             Lucas Moraes
           </Link>
 
@@ -35,12 +40,22 @@ export function Nav() {
             ))}
           </div>
 
-          <a
-            href="#contato"
-            className="rounded-md bg-foreground px-3.5 py-1.5 text-sm font-medium text-background transition-opacity hover:opacity-85"
-          >
-            Conversar
-          </a>
+          <div className="flex items-center gap-3">
+            <a
+              href={INSTAGRAM}
+              target="_blank"
+              rel="noreferrer"
+              className="hidden text-sm text-muted transition-colors hover:text-foreground sm:inline"
+            >
+              {INSTAGRAM_HANDLE}
+            </a>
+            <a
+              href="#contato"
+              className="rounded-md bg-foreground px-3.5 py-1.5 text-sm font-medium text-background transition-opacity hover:opacity-85"
+            >
+              Conversar
+            </a>
+          </div>
         </nav>
       </Container>
     </header>

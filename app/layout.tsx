@@ -32,6 +32,7 @@ export const metadata: Metadata = {
     siteName: "Lucas Moraes",
     locale: "pt_BR",
     type: "website",
+    images: [{ url: "/photos/retrato.jpg" }],
   },
   twitter: {
     card: "summary_large_image",

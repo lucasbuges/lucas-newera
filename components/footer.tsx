@@ -1,5 +1,5 @@
 import { Container } from "./container";
-import { INSTAGRAM, EMAIL, LINKEDIN } from "@/lib/config";
+import { INSTAGRAM, INSTAGRAM_HANDLE, EMAIL, LINKEDIN } from "@/lib/config";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -18,7 +18,7 @@ export function Footer() {
               rel="noreferrer"
               className="text-muted transition-colors hover:text-foreground"
             >
-              Instagram
+              {INSTAGRAM_HANDLE}
             </a>
             <a
               href={LINKEDIN}

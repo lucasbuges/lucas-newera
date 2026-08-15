@@ -1,11 +1,29 @@
 import { Container } from "./container";
-import { INSTAGRAM, AUDIENCE } from "@/lib/config";
+import { INSTAGRAM, INSTAGRAM_HANDLE, AUDIENCE } from "@/lib/config";
 
 const THEMES = [
   "Por que o piloto de IA funciona e a versão em produção não",
   "Agente vertical: o que ele resolve que um chatbot não resolve",
   "Construir, comprar ou integrar — como decidir sem refazer em um ano",
   "O que segurança e jurídico perguntam antes de aprovar IA na empresa",
+];
+
+const PHOTOS = [
+  {
+    src: "/photos/palco-1.jpg",
+    alt: "Lucas Moraes apresentando no palco",
+    href: INSTAGRAM,
+  },
+  {
+    src: "/photos/palco-2.jpg",
+    alt: "Lucas Moraes em conversa",
+    href: INSTAGRAM,
+  },
+  {
+    src: "/photos/palco-3.jpg",
+    alt: "Lucas Moraes em podcast",
+    href: INSTAGRAM,
+  },
 ];
 
 export function Writing() {
@@ -21,10 +39,10 @@ export function Writing() {
               IA sem hype e sem manual
             </h2>
             <p className="mt-5 max-w-lg leading-relaxed text-muted">
-              {AUDIENCE} de pessoas acompanham. Falo de inteligência artificial
-              aplicada de verdade: o que funciona em produção, o que só funciona
-              em demonstração, e o que aprendi colocando agentes na frente de
-              cliente grande.
+              {AUDIENCE} de pessoas acompanham no Instagram. Falo de
+              inteligência artificial aplicada de verdade: o que funciona em
+              produção, o que só funciona em demonstração, e o que aprendi
+              colocando agentes na frente de cliente grande.
             </p>
             <a
               href={INSTAGRAM}
@@ -32,7 +50,7 @@ export function Writing() {
               rel="noreferrer"
               className="mt-8 inline-flex items-center gap-2 rounded-md border border-border-strong px-5 py-2.5 text-sm font-medium transition-colors hover:bg-surface-hover"
             >
-              @lucasmoraes.ai
+              {INSTAGRAM_HANDLE}
               <svg
                 width="14"
                 height="14"
@@ -64,6 +82,26 @@ export function Writing() {
               </li>
             ))}
           </ul>
+        </div>
+
+        <div className="mt-14 grid grid-cols-1 gap-2 sm:grid-cols-3">
+          {PHOTOS.map((photo) => (
+            <a
+              key={photo.src}
+              href={photo.href}
+              target="_blank"
+              rel="noreferrer"
+              className="photo-fade overflow-hidden rounded-xl border border-border"
+            >
+              <img
+                src={photo.src}
+                alt={photo.alt}
+                width={480}
+                height={600}
+                className="aspect-[4/5] w-full object-cover"
+              />
+            </a>
+          ))}
         </div>
       </Container>
     </section>

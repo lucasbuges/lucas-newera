@@ -1,5 +1,5 @@
 import { Container } from "./container";
-import { EMAIL, INSTAGRAM } from "@/lib/config";
+import { EMAIL, INSTAGRAM, INSTAGRAM_HANDLE } from "@/lib/config";
 
 export function Contact() {
   return (
@@ -30,7 +30,7 @@ export function Contact() {
               rel="noreferrer"
               className="rounded-md border border-border-strong px-5 py-2.5 text-sm font-medium transition-colors hover:bg-surface-hover"
             >
-              @lucasmoraes.ai
+              {INSTAGRAM_HANDLE}
             </a>
           </div>
         </div>
