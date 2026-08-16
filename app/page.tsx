@@ -1,5 +1,6 @@
 import { Hero } from "@/components/hero";
-import { Offers } from "@/components/offers";
+import { PresenceMenu } from "@/components/presence-menu";
+import { Talks } from "@/components/talks";
 import { Expertise } from "@/components/expertise";
 import { TrackRecord } from "@/components/track-record";
 import { Writing } from "@/components/writing";
@@ -9,7 +10,8 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Offers />
+      <PresenceMenu />
+      <Talks />
       <Expertise />
       <TrackRecord />
       <Writing />

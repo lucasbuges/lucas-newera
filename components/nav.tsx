@@ -3,7 +3,8 @@ import { Container } from "./container";
 import { INSTAGRAM, INSTAGRAM_HANDLE, PHOTO_PROFILE } from "@/lib/config";
 
 const LINKS = [
-  { href: "#ofertas", label: "Como trabalho" },
+  { href: "#contratar", label: "Cardápio" },
+  { href: "#palestras", label: "Palco" },
   { href: "#especialidades", label: "Especialidades" },
   { href: "#trajetoria", label: "Quem fala" },
   { href: "#escrita", label: "Conteúdo" },
@@ -50,10 +51,10 @@ export function Nav() {
               {INSTAGRAM_HANDLE}
             </a>
             <a
-              href="#contato"
+              href="#contratar"
               className="rounded-md bg-foreground px-3.5 py-1.5 text-sm font-medium text-background transition-opacity hover:opacity-85"
             >
-              Conversar
+              Contratar
             </a>
           </div>
         </nav>

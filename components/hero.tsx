@@ -37,16 +37,16 @@ export function Hero() {
 
             <div className="mt-10 flex flex-wrap items-center gap-3">
               <a
-                href="#ofertas"
+                href="#contratar"
                 className="rounded-md bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-opacity hover:opacity-85"
               >
-                Como posso ajudar
+                Ver cardápio
               </a>
               <a
-                href="#contato"
+                href="/checkout/?offer=conselheiro"
                 className="rounded-md border border-border-strong px-5 py-2.5 text-sm font-medium transition-colors hover:bg-surface-hover"
               >
-                Falar comigo
+                Assento de conselho
               </a>
             </div>
           </div>
